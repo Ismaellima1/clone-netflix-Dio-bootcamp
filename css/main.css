@@ -1,0 +1,151 @@
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::selection{
+  background-color: var(--vermelho);
+  color: white;
+}
+
+/* elementos base */
+body{
+  background: var(--preto);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+
+body::-webkit-scrollbar{
+  width: 15px;
+}
+body::-webkit-scrollbar-track{
+  background: var(--preto);
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #E50914;
+  border-radius: 10px;
+  border: 3px solid var(--preto);
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+header .logo{
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header nav a{
+  padding: 20px 0;
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 20px;
+  transition: .1s ease-out;
+}
+header nav a:hover{
+  color: #fff;
+}
+
+/* filme principal */
+.filme-principal{
+  font-size: 16px;
+  height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url(../img/fundoHomensDeTerno.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.filme-principal .descricao{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.titulo{
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 2rem;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .2s ease-out;
+}
+.btn1:hover{
+  box-shadow: inset 300px 0 30px 0 var(--vermelho);
+  color: black;
+}
+.btn2:hover{
+  box-shadow: inset 300px 0 0 0 white;
+  color: black;
+}
+
+.botao svg{
+  margin-right: 5px;
+}
+
+.container{
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carrosel-filmes{
+  margin-top: 10px;
+}
+
+/* miniplay assistir agora */
+.video{
+  display: none;
+  align-self: center;
+  width: 500px;
+  height: 400px;
+  background-color: red;
+}
+.info{
+  display: block;
+}
+#bnt-voltarInfo{
+  position: absolute;
+  top: 5rem;
+  right: 73rem;
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
