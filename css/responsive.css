@@ -9,18 +9,6 @@
     width: 17rem;
     height: 50px
   }
-
-  .video{
-    position: relative;
-    left: 2%;
-    min-width: 90%;
-  }
-
-  #bnt-voltarInfo{
-    left: -1rem;
-    bottom: -1rem;
-    z-index: 2;
-  }
 }
 
 @media (min-width: 1000px){

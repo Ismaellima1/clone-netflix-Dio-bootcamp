@@ -130,18 +130,17 @@ header nav a:hover{
 /* miniplay assistir agora */
 .video{
   display: none;
-  align-self: center;
-  width: 100%;
+  width: 1000px;
   height: 400px;
-  background-color: red;
 }
 .info{
   display: block;
 }
 #bnt-voltarInfo{
-  position: absolute;
-  bottom: 25rem;
-  left: 1rem;
+  display: none;
+  position: relative;
+  top: 20px;
+  left: 20px;
   width: 70px;
   height: 70px;
   background: white;
